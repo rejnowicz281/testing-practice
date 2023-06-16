@@ -3,7 +3,7 @@ const a_code = "a".charCodeAt(0);
 const A_code = "A".charCodeAt(0);
 const Z_code = "Z".charCodeAt(0);
 
-function cipher(text, key) {
+export default function cipher(text, key) {
     let shiftedText = "";
     for (let i = 0; i < text.length; i++) {
         shiftedText += shift(text[i], key);
@@ -38,5 +38,3 @@ function shift(char, key) {
 
     return String.fromCharCode(shiftedCode);
 }
-
-module.exports = cipher;

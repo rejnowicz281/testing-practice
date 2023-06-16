@@ -1,4 +1,4 @@
-function analyzeArray(arr) {
+export default function analyzeArray(arr) {
     return {
         average: arr.reduce((a, b) => a + b, 0) / arr.length,
         min: Math.min(...arr),
@@ -6,5 +6,3 @@ function analyzeArray(arr) {
         length: arr.length,
     };
 }
-
-module.exports = analyzeArray;

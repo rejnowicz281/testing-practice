@@ -1,8 +1,8 @@
-const capitalize = require("./capitalize");
-const reverseString = require("./reverseString");
-const calculator = require("./calculator");
-const cipher = require("./cipher");
-const analyzeArray = require("./analyzeArray");
+import analyzeArray from "./analyzeArray";
+import calculator from "./calculator";
+import capitalize from "./capitalize";
+import cipher from "./cipher";
+import reverseString from "./reverseString";
 
 // Capitalize
 test("Capitalizes", () => {
